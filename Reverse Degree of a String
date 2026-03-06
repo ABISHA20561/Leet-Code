@@ -1,0 +1,21 @@
+class Solution {
+    public int reverseDegree(String s) {
+        int v=0;
+        int g=0;
+        int ans=0;
+        int d=0;
+        int f=0;
+        for(int i=0;i<s.length();i++)
+        {
+            char a=s.charAt(i);
+            v=a;
+            g=v-96;
+            ans=26-(g-1);
+            d=ans*(i+1);
+            f+=d;
+
+            
+        }
+        return f;
+    }
+}
